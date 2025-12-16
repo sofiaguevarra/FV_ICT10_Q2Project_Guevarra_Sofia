@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+   <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <title>Grade Calculator</title>
+    <style>
+        body {
+            background-image: url(https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/3f56ca99-49c1-4fdb-94b5-1cf32a5495bf/Website+Detail-03.jpg); 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #ffffff;
+            color: white;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #be544d;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+     select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+     }
+        button {
+            background-color: #343b6c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        output {
+            margin-top: 25px;
+            background-color: #fdecec;
+            padding: 20px;
+            border-left: 6px solid #ffffff;
+            white-space: pre-line;
+            color: rgb(255, 255, 255);
+            font-family: monospace;
+        }
+        input {
+         margin: 8px 0;
+         padding: 8px;
+         width: 90%;
+         border: 1px solid #4f7c5a;
+         border-radius: 6px;
+      }
+      button {
+         background-color: rgb(187, 216, 112);
+         color: rgb(0, 0, 0);
+         padding: 10px;
+         width: 100%;
+         border: none;
+         border-radius: 6px;
+         cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4 rounded">
+      <div class="container-fluid">
+         <a class="navbar-brand" href="index.html">Ob Montessori Center</a>
+         <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="page2.html">Grade Calculator</a></li>
+               <li class="nav-item"><a class="nav-link" href="page3.html">Club Information</a></li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+    <center>
+    <div class="container">
+         <h2>Student Grade Calculator</h2>
+         <label>First Name:</label><br>
+        <input type="text" id="first_name" placeholder="first name"><br>
+         <label>Last Name:</label><br>
+        <input type="text" id="last_name" placeholder="last name"><br>
+
+      <h2>Enter your grades:</h2>
+     <label>Math:</label><br>
+<input type="text" id="math" placeholder="Grade"><br>
+
+<label>Science:</label><br>
+<input type="text" id="science" placeholder="Grade"><br>
+
+<label>English:</label><br>
+<input type="text" id="english" placeholder="Grade"><br>
+
+<label>Filipino:</label><br>
+<input type="text" id="filipino" placeholder="Grade"><br>
+
+<label>Social Studies:</label><br>
+<input type="text" id="social_studies" placeholder="Grade"><br>
+
+<label>ICT:</label><br>
+<input type="text" id="ict" placeholder="Grade"><br>
+<button py-click="general_weighted_average">Calculate GWA</button>
+
+<div id="student_info" style="margin-top:20px; font-weight:bold;"></div>
+<div id="summary" style="margin-top:10px; white-space: pre-line; font-family: monospace;"></div>
+<div id="output" style="margin-top:10px; font-weight:bold;"></div>
+
+      </center>
+
+<script type="py" src="main.py"></script>
+
+
+</body>
+</html>
